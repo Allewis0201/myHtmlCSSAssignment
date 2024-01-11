@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>main</title>
+
+    <style>
+        body{
+            background-color: #5B2386;
+            color: #FFFFFF;
+        }
+
+        main
+        {
+            margin-top: 100px;
+        }
+
+        .title
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;;
+        }
+
+
+
+
+
+
+        #clock
+        {
+            position: absolute;
+        }
+
+        #title_image
+        {
+            position: relative;
+        }
+
+        .text
+        {
+            margin-top : 150px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .text p
+        {
+            color: #F5DF4D;
+            font-size: 36px;
+        }
+
+        .text2
+        {
+            display: flex;
+            justify-content: center;
+            font-size: 18px;
+        }
+
+        .text2 p
+        {
+            text-align: center;
+            line-height: 2;
+        }
+
+        span
+        {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        #dot
+        {
+            margin-top: 60px;
+            position: absolute;
+        }
+
+
+        .input
+        {
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .myInput
+        {
+            width: 198px;
+            padding: 15px;
+            border-radius: 7px;
+        }
+
+
+
+        .buttonDiv
+        {
+            margin-top: 100px;
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .calButton
+        {
+            border-radius: 56px;
+            background-color: #FCEE21;
+            font-size: 24px;
+            color: #5B2386;
+            font-weight: bolder;
+            padding: 11px 49px 11px 49px;
+        }
+
+        .result
+        {
+            margin-top: 100px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .pmore
+        {
+            font-size: 24px;
+
+        }
+
+        .more
+        {
+            font-size: 72px;
+        }
+
+        .promotion
+        {
+            margin-top: 100px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .shareButton
+        {
+            border-radius: 56px;
+            background-color: #FFFFFF;
+            font-size: 24px;
+            color: #5B2386;
+            font-weight: bolder;
+            padding: 11px 49px 11px 49px;
+        }
+
+        .copyright
+        {
+            margin-top: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .copy
+        {
+            font-size: 12px;
+        }
+
+
+        .modal
+        {
+            background-color: #FFFFFF;
+            color: #5B2386;
+            width: 800px;
+            height: 800px;
+            text-align: center;
+            border-radius: 30px;
+        }
+
+        .cheer
+        {
+            font-size: 96px;
+            margin-bottom: 20px;
+            padding-top: 20px;
+        }
+
+        .cheer2
+        {
+            font-size: 36px;
+        }
+
+        .lion
+        {
+            margin-bottom: 50px;
+        }
+
+        
+
+
+    </style>
+</head>
+<body>
+<main>
+    <div class = "title">
+        <img src="Frame%2012.png" id="clock" alt="시계이미지">
+        <img src="Frame.png" id="title_image" alt="제목이미지">
+    </div>
+
+    <div class = "text">
+        <p>"연습은 어제의 당신보다 당신을 더 낫게 만든다."</p>
+    </div>
+
+    <div class = "text2">
+        <img src="따움표.png" id="dot" alt="따옴표">
+        <p><span>1만 시간의 법칙</span>은<br>어떤 분야의 전문가가 되기 위해서는<br>최소한 1만 시간의 훈련이 필요하다는 법칙이다.</p>
+    </div>
+
+
+    <div class ="input">
+        <div class = "input1">
+            <p>나는 <input class = "myInput" type="text" placeholder="예)프로그래밍"> 전문가가 될 것이다.</p>
+        </div>
+
+        <div class = "input2">
+            <p>그래서 앞으로 매일 하루에 <input class = "myInput" type="text" placeholder="예)5"> 시간씩 훈련할 것이다.</p>
+        </div>
+    </div>
+
+
+    <div class = "buttonDiv">
+        <button class = "calButton">나는 며칠 동안 훈련을 해야 1만 시간이 될까?</button>
+        <img src="Frame%2011.png" alt="터치">
+    </div>
+
+    <div class = "result">
+        <p class ="pmore">당신은 <span class ="more">프로그래밍</span> 전문가가 되기 위해서<br>대략 <span class ="more">5110</span>일 이상 훈련하셔야 합니다! :)</p>
+    </div>
+
+
+    <div class="promotion">
+        <button class = "calButton">훈련하러 가기 GO!GO!</button>
+        <button class = "shareButton">공유하기</button>
+    </div>
+
+
+    <div class = "copyright">
+        <img src="위니브.png" alt="로고">
+        <p class="copy">※ 본 서비스 내 이미지 및 콘텐츠의 저작권은 주식회사 WeNiv에 있습니다.<br>수정 및 재배포, 무단 도용 시 법적인 문제가 발생할 수 있습니다.</p>
+    </div>
+
+
+    <div class = "modal">
+        <p class="cheer">화이팅!!♥♥♥</p>
+        <p class = "cheer2">당신의 꿈을 응원합니다!</p>
+        <img src="라이캣.png" alt="라이캣" class ="lion">
+
+        <button class="calButton">종료하고 진짜 훈련하러 가기! GO!GO!</button>
+
+    </div>
+    
+</main>
+
+
+</body>
+</html>
